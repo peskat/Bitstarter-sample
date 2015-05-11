@@ -14,11 +14,11 @@ app.use(express.static(__dirname + '/public'));
   //      res.end();
     //  });
 
-var message = fs.readFileSync('index.html').toString();
+//var message = fs.readFileSync('index.html').toString();
 
-app.get('/', function(request, response) {
-  response.send(message);
-});
+//app.get('/', function(request, response) {
+//  response.send(message);
+//});
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
